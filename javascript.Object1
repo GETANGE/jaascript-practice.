@@ -1,0 +1,36 @@
+//Method: LITERAL
+ var employee={id:123,Name:'Emmanuel Getange', Role:'Fullstack Developer.', Salary:660000 }
+    console.log(
+        "Employee`s ID: "+employee.id,
+        "Employes`s Name: "+employee.Name,
+        "Employee`s Role: "+employee.Role,
+        "Employee`s Salary: "+employee.Salary
+        );
+
+//Method2: INSTANCE OF AN OBJECT.
+ var employee1= new Object();
+  employee1.id=124;
+  employee1.Name='JoyElizabeth Muthoni';
+  employee1.Role='React Developer.';
+  employee1.Salary=480000;
+  console.log(
+    "Employee`s ID: "+employee1.id,
+    "Employes`s Name: "+employee1.Name,
+    "Employee`s Role: "+employee1.Role,
+    "Employee`s Salary: "+employee1.Salary
+  );
+ //Method3: INSTANCE OF AN OBJECT CONSTRUCTOR.
+   // create a function with arguments.
+    function employee2(id, name,Role,salary){
+        this.id=id;
+        this.Name=name;
+        this.Role=Role;
+        this.Salary=salary;
+    }
+    let employe2=new employee2(125,"Daniel Brian","Android Developer",660000);
+      console.log(
+        "Employee`s ID: "+employe2.id,
+        "Employes`s Name: "+employe2.Name,
+        "Employee`s Role: "+employe2.Role,
+        "Employee`s Salary: "+employe2.Salary
+      )
