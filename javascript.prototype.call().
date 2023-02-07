@@ -1,0 +1,30 @@
+//this method calls a function by passing 'this'  with a given value and argument.
+ function sum(a, b){
+    return a + b;
+ }
+  var result= sum.call(this, 5,10);
+   console.log( "The sum is: "+result);
+
+   //second example.
+   function product(c,d){
+    return c*d;
+   }
+    let result1=product.call(this, 5,10);
+     console.log("The product is: "+ result1);
+
+    //third example.
+  //real world example.
+   const company={
+    name: "Google",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Google_logo.svg/1200px-Google_logo.svg.png",
+    website: "https://www.google.com",
+    phone: "0123456789",
+    address: 245,
+   };
+     //create a function definition.
+     function great(){
+        var result2=`Company name: ${this.name}, Company logo: ${this.logo} ,
+          Company website: ${this.website},Company phone: ${this.phone} , Company address: ${this.address}`;
+        console.log(result2);
+     }
+   great.call(company);
