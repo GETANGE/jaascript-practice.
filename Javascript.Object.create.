@@ -1,0 +1,31 @@
+//Javascript Object.create()
+let Student={
+    Name: 'Emmanuel',
+    age:21,
+    Gender:'Male',
+    height:1.75,
+    display(){
+        console.log('The name is: ',this.Name);
+    },
+    displayGender(){
+        console.log('The gender is: ',this.Gender);
+    },
+    displayAge(){
+        console.log('The age is: ',this.Age);
+    }
+};
+  //lets create another function from the prototype student.
+  console.log('The new employee details is as follows.');
+   var std1=Object.create(Student);
+     std1.Name='Elizabeth';
+     std1.display();
+
+  //create a function from the prototype student.
+  let std2=Object.create(Student);
+     std2.Gender='Female';
+     std2.displayGender();
+
+ //create a function from the prototype student.
+   const std3=Object.create(Student);
+      std3.Age=21;
+      std3.displayAge();
