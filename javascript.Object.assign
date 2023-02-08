@@ -1,0 +1,29 @@
+let object1={
+    a:23,
+    b:24,
+    c:25,
+}
+let object2={
+    e:29,
+    f:34,
+    j:35,
+}
+ let object3=Object.assign({d:26,},object1);
+    console.log(object3.d);
+    //try overriding.
+    let object4=Object.assign({b:34,c:37},object1);
+    console.log(object4.b,object4.c);
+
+    //real world examples.
+    //Using Object.assign() to clone & merge objects
+    let Student={
+        name:"Emmanuel Getange",
+        age:21,
+    };
+     //without using the assign method.
+     var newObject={role:'Fullstack Developer'}
+      console.log(newObject);
+
+      //using the assign.
+      let newObject2=Object.assign(newObject,Student);
+       console.log(newObject2);
