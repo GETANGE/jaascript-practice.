@@ -1,0 +1,24 @@
+//METHOD4:OBJECT.DEFINEPROPERTIES()METHOD.
+   const person1={};
+    Object.defineProperties(person1,{
+     Name:{
+       value:'JoyElizabeth',
+       writable:true,
+       configurable:true,
+       enumerable:true,
+     },
+     Salary:{
+      value:480000,
+      configurable:true,
+      writable:true,
+     },
+     Role:{
+      value:'Fullstack Developer',
+      writable:true,
+      enumerable:true,
+      configurable:true,
+     }
+    });
+    console.log(person1.Name);
+    console.log(person1.Salary);
+    console.log(person1.Role);
