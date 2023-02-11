@@ -1,0 +1,21 @@
+//OBJECTS:METHOD 3: OBJECT.DEFINEPROPERTY()METHOD.
+  let person={
+   Name:'Emmanuel',
+   Age:22,
+  };
+
+  Object.defineProperty(person,'Gender',{
+   value:'Male',
+   writable:true,
+   enumerable:true,
+   configurable:true,
+  });
+
+  //adding second property to the person object.
+  Object.defineProperty(person,'Salary',{
+   value:600000,
+   writable:true,
+   enumerable:true,
+   configurable:true,
+  });
+  console.log(person);
